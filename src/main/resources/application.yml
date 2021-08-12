@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: 123
+    url: jdbc:postgresql://localhost:5432/namvux
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        #dev env
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+            #dev env
+    show-sql: true
+#jwt:
+#  clientId: demo
+#  client-secret: secret
+#  accessTokenValidititySeconds: 8640000
+#  refreshTokenValiditySeconds: 1000
+#server:
+  port: 8080
