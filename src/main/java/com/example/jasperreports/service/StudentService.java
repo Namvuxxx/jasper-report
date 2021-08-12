@@ -8,4 +8,5 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class StudentService {
     private final StudentRepository repository;
+
 }

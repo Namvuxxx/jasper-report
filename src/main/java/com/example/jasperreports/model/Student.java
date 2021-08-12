@@ -1,5 +1,6 @@
 package com.example.jasperreports.model;
 
+import com.example.jasperreports.common.BaseModel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,8 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table
-public class Student {
+@Table(schema = "student", name = "student")
+public class Student extends BaseModel<String> {
     @Id
     private String id;
 
